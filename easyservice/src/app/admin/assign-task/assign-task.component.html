@@ -1,0 +1,216 @@
+<!-- <div class="container">
+  <div class="row justify-content-start">
+    <div class="col-4">
+      <div class="d-flex flex-row justify-content-center">
+        <button class="btn btn-outline-info">
+          Assign Maintenance to Contract
+        </button>
+        <button class="btn btn-outline-info">Assign Task to Maintenance</button>
+        <button class="btn btn-outline-info">Assign Task to Worker</button>
+      </div>
+    </div>
+    <div class="col-8">
+      <h1>Assign Maintenance</h1>
+      <form
+        #assignMaintenace="ngForm"
+        (ngSubmit)="onClickAssignMaintenance(assignMaintenace)"
+      >
+        <div class="form-group">
+          <label for="contractId" class="">Contract Id</label>
+          <input
+            type="number"
+            name="contractId"
+            id="contractId"
+            class="form-control w-75"
+            placeholder="Enter contractId"
+            ngModel
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="maintenanceId" class="">Maintenance Id</label>
+          <input
+            type="number"
+            name="maintenanceId"
+            id="maintenanceId"
+            class="form-control w-75"
+            placeholder="Enter maintenanceId"
+            ngModel
+          />
+        </div>
+        <button type="submit" class="btn btn-outline-primary">Submit</button>
+      </form>
+
+      <h1>Assign Task</h1>
+
+      <form #assignTask="ngForm" (ngSubmit)="onClickAssignTask(assignTask)">
+        <div class="form-group">
+          <label for="taskId" class="">Task Id</label>
+          <input
+            type="number"
+            name="taskId"
+            id="taskId"
+            class="form-control w-75"
+            placeholder="Enter taskId"
+            ngModel
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="maintenanceId" class="">maintenance Id </label>
+          <input
+            type="number"
+            name="maintenanceId"
+            id="maintenanceId"
+            class="form-control w-75"
+            placeholder="Enter maintenanceId"
+            ngModel
+          />
+        </div>
+        <button type="submit" class="btn btn-outline-primary">Submit</button>
+      </form>
+
+      <h1>Assign Worker</h1>
+
+      <form
+        #assignWorker="ngForm"
+        (ngSubmit)="onClickAssignWorker(assignWorker)"
+      >
+        <div class="form-group">
+          <label for="workerId" class="">Worker Id</label>
+          <input
+            type="number"
+            name="workerId"
+            id="workerId"
+            class="form-control w-75"
+            placeholder="Enter workerId"
+            ngModel
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="taskId" class="">Task Id </label>
+          <input
+            type="number"
+            name="taskId"
+            id="taskId"
+            class="form-control w-75"
+            placeholder="Enter taskId"
+            ngModel
+          />
+        </div>
+        <button type="submit" class="btn btn-outline-primary">Submit</button>
+      </form>
+    </div>
+  </div>
+</div> -->
+<div class="container">
+  <div id="content">
+    <div id="main-content">
+      <mat-tab-group>
+        <mat-tab label="Tab One">
+          <h1 class="mt-5">Assign Maintenance</h1>
+
+          <form
+            #assignMaintenace="ngForm"
+            (ngSubmit)="onClickAssignMaintenance(assignMaintenace)"
+          >
+            <div class="form-group">
+              <label for="contractId" class="">Contract Id</label>
+              <input
+                type="number"
+                name="contractId"
+                id="contractId"
+                class="form-control w-75"
+                placeholder="Enter contractId"
+                ngModel
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="maintenanceId" class="">Maintenance Id</label>
+              <input
+                type="number"
+                name="maintenanceId"
+                id="maintenanceId"
+                class="form-control w-75"
+                placeholder="Enter maintenanceId"
+                ngModel
+              />
+            </div>
+            <button type="submit" class="btn btn-outline-primary">
+              Submit
+            </button>
+          </form>
+        </mat-tab>
+        <mat-tab label="Tab Two">
+          <h1 class="mt-5">Assign Task</h1>
+
+          <form #assignTask="ngForm" (ngSubmit)="onClickAssignTask(assignTask)">
+            <div class="form-group">
+              <label for="taskId" class="">Task Id</label>
+              <input
+                type="number"
+                name="taskId"
+                id="taskId"
+                class="form-control w-75"
+                placeholder="Enter taskId"
+                ngModel
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="maintenanceId" class="">maintenance Id </label>
+              <input
+                type="number"
+                name="maintenanceId"
+                id="maintenanceId"
+                class="form-control w-75"
+                placeholder="Enter maintenanceId"
+                ngModel
+              />
+            </div>
+            <button type="submit" class="btn btn-outline-primary">
+              Submit
+            </button>
+          </form>
+        </mat-tab>
+        <mat-tab label="Tab Two">
+          <h1 class="mt-5">Assign Worker</h1>
+
+          <form
+            #assignWorker="ngForm"
+            (ngSubmit)="onClickAssignWorker(assignWorker)"
+          >
+            <div class="form-group">
+              <label for="workerId" class="">Worker Id</label>
+              <input
+                type="number"
+                name="workerId"
+                id="workerId"
+                class="form-control w-75"
+                placeholder="Enter workerId"
+                ngModel
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="taskId" class="">Task Id </label>
+              <input
+                type="number"
+                name="taskId"
+                id="taskId"
+                class="form-control w-75"
+                placeholder="Enter taskId"
+                ngModel
+              />
+            </div>
+            <button type="submit" class="btn btn-outline-primary">
+              Submit
+            </button>
+          </form>
+        </mat-tab>
+      </mat-tab-group>
+    </div>
+  </div>
+</div>

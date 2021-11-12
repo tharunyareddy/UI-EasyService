@@ -1,0 +1,38 @@
+<div class="d-flex flex-row">
+  <div>
+    <h1>Contracts</h1>
+    <div *ngFor="let c of contracts">
+      <p>Contract Name : {{ c.contractName }}</p>
+      <div *ngFor="let m of c.maintenanceList">
+        <p class="ml-3">Maintenace Name: {{ m.maintenanceName }}</p>
+        <div *ngFor="let t of maintenanceTaskList">
+          <p class="ml-5">Task Name: {{ t.taskName }}</p>
+        </div>
+      </div>
+
+      <hr />
+    </div>
+  </div>
+  <!-- 
+  <div>
+    <h1>Maintenance</h1>
+    <div *ngFor="let m of maintenances">
+      <p>{{ m.maintenanceName }}</p>
+    </div>
+  </div>
+
+  <div>
+    <h1>Task</h1>
+    <div *ngFor="let t of tasks">
+      <p>{{ t.taskName }}</p>
+    </div>
+  </div>
+
+  <div>
+    <h1>Worker</h1>
+    <div *ngFor="let w of workers">
+      <p>{{ w.workerName }}</p>
+    </div>
+  </div>
+</div> -->
+</div>

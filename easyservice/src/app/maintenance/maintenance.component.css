@@ -1,0 +1,60 @@
+.maintenance-card{
+    background-color:transparent;
+    border-width: 2px;
+    border-style: solid;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+ }
+
+ .maintenance-container {
+    background-color: #edfbfc;
+    background-size: cover;
+    min-height: 100vh;
+    max-height: 1000px;
+    overflow-y: auto;
+  }
+  
+  .checkbox {
+    width: 16px;
+    height: 16px;
+    margin-left: 15px;
+    color: #12d4ee;
+  }
+ 
+.name {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   color: darkslategray;
+  }
+  
+  .inprogress {
+    color: rgb(177, 177, 60);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  .onhold {
+    color: red;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  .completed {
+    color: green;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  .defined {
+    color: blue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  .high {
+    color: red;
+  }
+  
+  .low {
+    color: green;
+  }
+  
+  .middle {
+    color: rgb(177, 177, 60);
+  }
+  

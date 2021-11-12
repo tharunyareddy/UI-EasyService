@@ -1,0 +1,50 @@
+.login {
+  border-radius: 10px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #12d4ee;
+}
+
+.login-container {
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("https://res.cloudinary.com/deri2awff/image/upload/v1636186312/EM7fHA_qyvlxt.jpg");
+}
+
+.icon {
+  font-size: 68px;
+  color: #12d4ee;
+}
+
+.label-name {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+  color: black;
+  font-weight: 400;
+}
+.input-text {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 10px;
+}
+.login-button {
+  background-color: transparent;
+  border-width: 2px;
+  border-radius: 10px;
+  border-color: #12d4ee;
+  width: 100px;
+  height: 40px;
+  color: #12d4ee;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.help-text {
+  color: green;
+}
+
+.required {
+  color: red;
+}

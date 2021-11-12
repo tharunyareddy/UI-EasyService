@@ -1,0 +1,67 @@
+<div [ngClass]="'login-container'">
+  <div class="container d-flex flex-row justify-content-center">
+    <div class="mt-5 pl-5 pr-5 pt-2 w-50" [ngClass]="'login'">
+      <div class="d-flex flex-row justify-content-center">
+        <i class="fas fa-users pt-5 pb-3" [ngClass]="'icon'"></i>
+      </div>
+      <h3 class="mb-3 text-center" style="color: white">User Login</h3>
+      <form #loginForm="ngForm" (ngSubmit)="onLogin(loginForm)">
+        <div class="form-group">
+          <label for="username" [ngClass]="'label-name'">UserName</label>
+          <div class="d-flex flex-row">
+            <span class="input-group-text"><i class="fas fa-user"></i></span>
+            <input
+              type="text"
+              name="username"
+              id="username"
+              class="form-control w-100"
+              placeholder="Enter Your Username"
+              [ngClass]="'input-text'"
+              ngModel
+            />
+          </div>
+        </div>
+        <div class="form-group pb-3">
+          <label for="password" [ngClass]="'label-name'">Password</label>
+          <div class="d-flex flex-row">
+            <span class="input-group-text"
+              ><i class="fas fa-unlock-alt"></i
+            ></span>
+            <input
+              type="password"
+              class="form-control w-100"
+              name="password"
+              placeholder="Enter Your Password"
+              [ngClass]="'input-text'"
+              ngModel
+            />
+          </div>
+        </div>
+        <p style="color: red">
+          {{ errorMessage }}
+        </p>
+        <div class="d-flex justify-content-center mb-4">
+          <button type="submit" [ngClass]="'login-button'">Login</button>
+          <button
+            type="submit"
+            [ngClass]="'login-button'"
+            class="ml-3"
+            (click)="onClick()"
+          >
+            Back
+          </button>
+        </div>
+        <div class="d-flex justify-content-between">
+          <div class="d-flex">
+            <p class="">Forget Password</p>
+            <span><i class="fas fa-question"></i></span>
+          </div>
+          <div class="d-flex">
+            <p class="ml-3">Need help</p>
+            <span><i class="fas fa-question"></i></span>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

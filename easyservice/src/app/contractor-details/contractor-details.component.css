@@ -1,0 +1,38 @@
+.details-container {
+  background-color: #edfbfc;
+  height: 100vh;
+  width: 100vw;
+  padding-left: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-right: 100px;
+}
+
+.contract-page{
+  font-weight: 600;
+font-size: 5vw;
+font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+font-style: italic;
+color: #12d4ee;
+}
+
+.contract-page .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+
+ngb-carousel .wrapper {
+  position: relative;
+  height: 0;
+  width: 0;
+  padding-top: 55%; 
+}
+ngb-carousel .wrapper>img {
+  border-radius: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}

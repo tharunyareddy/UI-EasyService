@@ -1,0 +1,125 @@
+<div class="p-3" [ngClass]="'task-form-container'">
+  <div class="form-row">
+    <div
+      class="form-group col-md-5"
+      style="border-width: 2px; border-color: black"
+    >
+      <div
+        class="card-body shadow-sm p-3 mb-2 mt-5 bg-body rounded p-5"
+        *ngIf="task"
+        [ngClass]="'task-label'"
+      >
+        <h4 class="text-center">Task Details</h4>
+        <p class="card-title">Task ID : {{ task.taskId }}</p>
+        <p class="card-title">Task Name : {{ task.taskName }}</p>
+        <p class="card-text">Task Name : {{ task.organiser }}</p>
+        <p class="card-text">
+          Task Period : {{ task.tStartDate }} to
+          {{ task.tEndDate }}
+        </p>
+        <p class="card-text">
+          Status :
+          {{ task.tStatus }}
+        </p>
+        <p class="card-text">
+          Duration Days :
+          {{ task.durationDays }}
+        </p>
+      </div>
+    </div>
+    <div class="form-group col-md-7">
+      <div>
+        <div class="container d-flex flex-row justify-content-center">
+          <div class="mt-5 pl-5 pr-5 pb-5 pt-2 w-50" [ngClass]="'task'">
+            <h3 class="text-center mb-3">UPDATE TASK</h3>
+            <form #taskForm="ngForm" (ngSubmit)="onUpdateTask(taskForm)">
+              <div class="form-group">
+                <label for="taskName" class="">Task Name</label>
+                <input
+                  type="text"
+                  name="taskName"
+                  id="taskName"
+                  class="form-control w-75"
+                  placeholder="Enter Your Task Name"
+                  ngModel
+                />
+              </div>
+              <div class="form-group">
+                <label for="organiser" class="">organiser</label>
+                <input
+                  type="text"
+                  name="organiser"
+                  id="organiser"
+                  class="form-control w-75"
+                  placeholder="Enter organiser"
+                  ngModel
+                />
+              </div>
+              <div class="form-group">
+                <label for="tStartDate" class="">Start Date</label>
+                <input
+                  type="date"
+                  name="tStartDate"
+                  id="tStartDate"
+                  class="form-control w-75"
+                  placeholder="Enter Start Date"
+                  ngModel
+                />
+              </div>
+              <div class="form-group">
+                <label for="tEndDate" class="">End Date</label>
+                <input
+                  type="date"
+                  name="tEndDate"
+                  id="tEndDate"
+                  class="form-control w-75"
+                  placeholder="Enter End date"
+                  ngModel
+                />
+              </div>
+              <div class="form-group">
+                <label for="durationDays" class="">durationDays</label>
+                <input
+                  type="number"
+                  name="durationDays"
+                  id="durationDays"
+                  class="form-control w-75"
+                  placeholder="Enter durationDays"
+                  ngModel
+                />
+              </div>
+              <div class="form-group">
+                <label for="tStatus" class="">Status</label>
+                <select
+                  class="form-control"
+                  name="tStatus"
+                  id="tStatus"
+                  ngModel
+                >
+                  <option value="INPROGRESS">INPROGRESS</option>
+                  <option value="ONHOLD">ONHOLD</option>
+                  <option value="COMPLETED">COMPLETED</option>
+                  <option value="DEFINED">DEFINED</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="taskId" class="">Task Id</label>
+                <input
+                  type="number"
+                  name="taskId"
+                  id="taskId"
+                  class="form-control w-75"
+                  placeholder="Enter taskId"
+                  ngModel
+                />
+              </div>
+              <div class="">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,19 @@
+<!-- <h1 class="mt-4">{{ contract.contractName }}</h1>
+<h1 class="mt-4">{{ contract.contractorName }}</h1>
+<h1 class="mt-4">{{ contract.startDate }}</h1>
+<h1 class="mt-4">{{ contract.endDate }}</h1>
+<h1 class="mt-4">{{ contract.cStatus }}</h1>
+<h1 class="mt-4">{{ contract.cPriority }}</h1>
+<h1 class="mt-4">{{ contract.contractImg }}</h1> -->
+
+<div class="container">
+  <div class="d-flex flex-row justify-content-center mt-5">
+    <div class="card w-75">
+      <div class="card-body">
+        <div *ngFor="let maintenance of contract.maintenanceList">
+          <h1 class="mt-4">{{ maintenance.maintenanceName }}</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

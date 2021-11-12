@@ -1,0 +1,37 @@
+<ul
+  ngbNav
+  #nav="ngbNav"
+  class="nav-tabs d-flex flex-row justify-content-around mt-3"
+>
+  <li ngbNavItem>
+    <a ngbNavLink>CONTRACT</a>
+    <ng-template ngbNavContent>
+      <app-contract-form></app-contract-form>
+    </ng-template>
+  </li>
+  <li ngbNavItem>
+    <a ngbNavLink>MAINTENANCE</a>
+    <ng-template ngbNavContent>
+      <app-maintenance-form></app-maintenance-form>
+    </ng-template>
+  </li>
+  <li ngbNavItem>
+    <a ngbNavLink>WORKER</a>
+    <ng-template ngbNavContent>
+      <app-worker-form></app-worker-form>
+    </ng-template>
+  </li>
+  <li ngbNavItem>
+    <a ngbNavLink>TASK</a>
+    <ng-template ngbNavContent>
+      <app-task-form></app-task-form>
+    </ng-template>
+  </li>
+  <li ngbNavItem>
+    <a ngbNavLink>ASSIGN</a>
+    <ng-template ngbNavContent>
+      <app-assign-task></app-assign-task>
+    </ng-template>
+  </li>
+</ul>
+<div [ngbNavOutlet]="nav"></div>
